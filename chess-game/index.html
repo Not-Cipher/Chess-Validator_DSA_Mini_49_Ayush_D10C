@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Move Validator - DSA Project</title>
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>♔ Chess Move Validator ♚</h1>
+    
+    <div class="game-layout">
+      <!-- Left Panel -->
+      <div class="side-panel">
+        <h3>Captured by White</h3>
+        <div class="captured-pieces" id="white-captured"></div>
+        
+        <h3 style="margin-top: 30px;">Move History</h3>
+        <div id="move-history"></div>
+      </div>
+
+      <!-- Center Board -->
+      <div class="center-panel">
+        <div id="board"></div>
+        <div id="status">White to move</div>
+        <div class="buttons">
+  <button id="bot-toggle" onclick="toggleBotMode()">👥 2-Player Mode</button>
+  <button onclick="undoMove()">↶ Undo</button>
+  <button onclick="resetGame()">↺ Reset</button>
+</div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="side-panel">
+        <h3>Captured by Black</h3>
+        <div class="captured-pieces" id="black-captured"></div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="/script.js"></script>
+  
+</body>
+</html>
